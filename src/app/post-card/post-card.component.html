@@ -1,0 +1,23 @@
+<div class="container"  [routerLink]="post.postId">
+
+<div class="panel panel-default">
+   
+   <div class="panel-heading">
+       {{post.title}}
+       <div class="block-right">{{post.createdOn  | date:'mediumDate'}}</div>
+    </div>
+
+   
+   <div class="panel-body"> 
+
+   	    <div class="row">
+
+   
+	<div class="col-md-7" id="bodybox" [innerHTML]="post.body | slice:0:601"></div>
+
+   	<div class="col-sm" id="imgbox"> <img src= {{post.postImg}}></div>
+ 	</div>	
+
+</div>	
+</div>	
+</div>	

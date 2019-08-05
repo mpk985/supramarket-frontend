@@ -1,0 +1,33 @@
+{
+    "name": "VHTees",
+    "version": "0.0.0",
+    "license": "MIT",
+    "dependencies": {
+        "@angular/common": "^4.3.1",
+        "@angular/compiler": "^4.3.1",
+        "@angular/core": "^4.3.1",
+        "@angular/forms": "^4.3.1",
+        "@angular/http": "^4.3.1",
+        "@angular/platform-browser": "^4.3.1",
+        "@angular/platform-browser-dynamic": "^4.3.1",
+        "@angular/router": "^4.3.1",
+        "bootstrap": "^3.3.7",
+        "enhanced-resolve": "^3.3.0",
+        "zone.js": "^0.8.14"
+    },
+    "devDependencies": {
+        "@angular/cli": "1.0.0",
+        "@angular/compiler-cli": "^4.3.1",
+        "@types/jasmine": "2.5.38",
+        "jasmine-core": "~2.5.2",
+        "jasmine-spec-reporter": "~3.2.0",
+        "karma": "~1.4.1",
+        "karma-chrome-launcher": "~2.0.0",
+        "karma-cli": "~1.0.1",
+        "karma-coverage-istanbul-reporter": "^0.2.0",
+        "karma-jasmine": "~1.1.0",
+        "karma-jasmine-html-reporter": "^0.2.2",
+        "ts-node": "~2.0.0",
+        "typescript": "~2.2.0"
+    }
+}

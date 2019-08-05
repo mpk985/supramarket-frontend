@@ -1,0 +1,27 @@
+<div class="navbar navbar-default">
+    <a href="/">
+              <img src="src/main/resources/db/migration/punchandpilogo.png" class="title-image">
+            </a>
+            <img src="src/main/resources/db/migration/titlebar.png" class="title-bar">
+            
+            
+    
+ </div>
+   <div class="navbar-collapse" role="navigation">
+        <ul class="nav nav-pills nav-default">
+          <!-- Notice: For Home to active, it must evalute
+              TRUE for ngclass-active==="/" or "home" etc>
+          </!-->
+          <li class="pill-style nav-link" [ngClass]="{'active': currentRoute === 'home'}"><a (click)="goToRoute('home')">Home</a></li>
+
+           <li class="pill-style nav-link" [ngClass]="{'active': currentRoute === 'items'}">
+            <a (click)="goToRoute('items')">Shop</a></li>
+
+            <li class="pill-style nav-link"[ngClass]="{'active': currentRoute === 'projects'}">
+            <a (click)="goToRoute('projects')">Projects</a></li>
+
+           <li class="pill-style nav-link"[ngClass]="{'active': currentRoute === 'about'}">
+            <a (click)="goToRoute('about')">About</a></li>
+       </ul>
+   </div>
+

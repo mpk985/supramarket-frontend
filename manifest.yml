@@ -1,0 +1,1 @@
+applications: - name: Punch-and-Pi  memory: 64M   health-check-type: port   buildpack: staticfile_buildpack   path: dist/   routes:   - route: punchandpi.com

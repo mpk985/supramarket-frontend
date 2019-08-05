@@ -1,0 +1,16 @@
+.contact-title {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 2.0em;
+	margin-left: 20px;
+}
+.contact-details {
+
+		font-family: "Lucida Console", Monaco, monospace;
+		font-size: 1.25em;
+		margin-left: 20px;
+		padding-left: 10px;
+}
+.container{
+	background-color: #FFFFFF;
+	text-align: center;
+}

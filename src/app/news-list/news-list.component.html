@@ -1,0 +1,12 @@
+
+<!-->removed news-sort as follows..
+	| newsSort:'asc'
+	</!-->
+<news-card *ngFor="let news of news | newsSort:'asc' " 
+  [news]="news">
+</news-card>
+
+<div *ngIf="error" class="alert alert-danger">
+  <span class="glyphicon glyphicon-exclamation-sign"></span>
+  {{error}}
+</div>

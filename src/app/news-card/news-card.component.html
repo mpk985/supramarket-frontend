@@ -1,0 +1,23 @@
+<div class="container">
+
+<div class="panel panel-default">
+   
+   <div class="panel-heading">
+       {{news.title}}
+       <div class="block-right">{{news.createdOn  | date:'mediumDate'}}</div>
+    </div>
+
+   
+   <div class="panel-body"> 
+
+   	    <div class="row">
+
+   
+	<div class="col-md-8" id="bodybox" [innerHTML]="news.body"></div>
+
+   	<div class="col-sm" id="imgbox"> <img src= {{news.newsImg}}></div>
+ 	</div>	
+
+</div>	
+</div>	
+</div>	

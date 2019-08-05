@@ -1,0 +1,20 @@
+.block-right {
+	float: right;
+}
+
+.img-color {
+	padding-left: 30px;
+	font-family: cursive;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: auto;
+    height: 300px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}

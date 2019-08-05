@@ -1,0 +1,14 @@
+<h3>
+    Projects
+</h3>
+<!-->removed post-sort as follows..
+	| postSort:'asc'
+	</!-->
+<post-card *ngFor="let post of posts | postSort:'asc' " 
+  [post]="post">
+</post-card>
+
+<div *ngIf="error" class="alert alert-danger">
+  <span class="glyphicon glyphicon-exclamation-sign"></span>
+  {{error}}
+</div>

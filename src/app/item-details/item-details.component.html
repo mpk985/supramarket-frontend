@@ -1,0 +1,28 @@
+<div *ngIf="item" class="item panel">
+   <div>
+       
+       <div routerLink="update" class="btn btn-primary pull-right">Add To Cart</div>
+   </div>
+   <table class="table table-condensed">
+       <thead>
+           <tr class="info">
+               <th>{{item.title}}</th>
+               <th class="price-header">Price</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr>
+                <td class="item-image">
+                    <img src = "{{item.productImg}}" width=400 height=420> 
+                </td>
+               <td class="item-price">${{item.price}}</td>
+           </tr>
+       </tbody>
+   </table>
+</div>
+
+
+  <div *ngIf="error" class="alert alert-danger">
+  <span class="glyphicon glyphicon-exclamation-sign"></span>
+  {{error}}
+</div>
