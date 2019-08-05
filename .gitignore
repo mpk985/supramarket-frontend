@@ -1,7 +1,7 @@
 
 /node_modules
-/target
-.log
-.tmp
+**/target
+**/*.log
+**/.tmp
 .DS_Store
 .idea/
