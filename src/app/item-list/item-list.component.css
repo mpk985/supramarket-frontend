@@ -6,3 +6,12 @@ h3{
 	margin: 0px;
 	padding: 10px 30px;
 }
+.card{
+	display: inline-block;
+}
+.wrapper{
+	text-align: center;
+}
+.row{
+	max-height: 80%;
+}

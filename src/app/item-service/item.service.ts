@@ -19,7 +19,7 @@ export class ItemService {
     }
 
     getAllItems() : Promise<Item[]> {
-        return this.http.get(this.url)
+        return this.http.get(this.url+'/?sold=false')
             .toPromise()
             .then((response) => response.json() as Item[])
             .catch(this.handleError);

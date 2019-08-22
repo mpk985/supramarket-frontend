@@ -1,9 +1,13 @@
 export class Item {
     inventoryId: number;
-    title: string;
-    size: string;
+    year: string;
+    make: string;
+    model: string;
+    trim: string;
+    transmission: string;
     color: string;
-    price: number;
-    inventoryRemaining: number;
+    price: string;
+    vin: string;
+    carSold: string;
     productImg: string;
 }

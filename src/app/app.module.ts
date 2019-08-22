@@ -64,7 +64,7 @@ import { NewsService } from './news-service/news.service';
            },
            {
                path: 'home',
-               component: NewsListComponent
+               component: ItemListComponent
            },
            {
                path: 'projects/:postId',

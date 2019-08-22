@@ -1,13 +1,16 @@
-<h3>
-    Products
-   
-</h3>
-<!--><item-card *ngFor="let item of items | itemSort:'asc'" 
-  [item]="item">
-</item-card></!-->
 
-<!--><div *ngIf="error" class="alert alert-danger"></!-->
+<div class="row">
+	<div class="wrapper">
+	
+		<item-card *ngFor="let item of items | itemSort:'asc'" 
+		  [item]="item">
+		</item-card>
+		
+	</div>
+</div>
+
+<!--
 	<div class="alert alert-danger">
   <span class="glyphicon glyphicon-exclamation-sign"></span>
   {{error}} Project for-sale coming soon!
-</div>
+</div> -->

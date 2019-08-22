@@ -21,10 +21,6 @@ export class ItemListComponent {
         .catch((error) => this.error = error);
     }
 
-    getMyName(): string {
-        return "Michael";
-    }
-
     deleteItemFromList(inventoryId: number) {
         const index: number = this.items
             .findIndex((item) => item.inventoryId === inventoryId);
