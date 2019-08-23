@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { ItemService } from '../item-service/item.service';
 import { Item } from '../item-service/item';
+import { ItemCardComponent } from '../item-card/item-card.component';
+
 
 @Component({
    selector: 'item-list',
@@ -10,15 +12,26 @@ import { Item } from '../item-service/item';
 export class ItemListComponent {
     private itemService: ItemService;
     private items: Item[];
+    private index: number = 0;
+    private item: Item;
+
     public error: string;
+
 
     constructor(itemService: ItemService) {
         this.itemService = itemService;
         itemService.getAllItems()
         .then((items) => {
-            this.items = items
+            this.items = items;
+            this.item = this.items[this.index+1];
         })
         .catch((error) => this.error = error);
+    }
+
+    updateIndex(counter: number){
+        this.index = Math.abs(counter%this.items.length);
+        console.log("Index updated: " + this.index);
+        this.item = this.items[this.index];
     }
 
     deleteItemFromList(inventoryId: number) {

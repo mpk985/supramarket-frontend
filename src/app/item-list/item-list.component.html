@@ -1,11 +1,11 @@
 
 <div class="row">
-	<div class="wrapper">
+	<div  class="wrapper">
 	
-		<item-card *ngFor="let item of items | itemSort:'asc'" 
-		  [item]="item">
+		<item-card (itemIndexEvent)="updateIndex($event)" 
+		  [(item)]="item">
 		</item-card>
-		
+
 	</div>
 </div>
 

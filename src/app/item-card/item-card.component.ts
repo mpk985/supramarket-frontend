@@ -11,15 +11,34 @@ import { Router } from '@angular/router';
 export class ItemCardComponent { 
     private router: Router;
 
+    private counter = 0;
+
     @Input()
     item: Item;
 
     @Output()
-    private itemDeleted = new EventEmitter();
+    itemDeleted = new EventEmitter();
+
+    @Output()
+    itemIndexEvent = new EventEmitter<number>();
 
     constructor(router: Router) {
         this.router = router;
     }
+
+    onClickRight() {
+        this.counter++;
+        console.log("Count:" + this.counter);
+        this.itemIndexEvent.emit(this.counter);
+    }
+
+    onClickLeft() {
+        this.counter--;
+                console.log("Count:" + this.counter);
+
+        this.itemIndexEvent.emit(this.counter);
+    }
+
 
     deleteItem() {
         this.itemDeleted.emit(this.item);
