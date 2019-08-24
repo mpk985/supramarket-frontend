@@ -28,14 +28,11 @@ export class ItemCardComponent {
 
     onClickRight() {
         this.counter++;
-        console.log("Count:" + this.counter);
         this.itemIndexEvent.emit(this.counter);
     }
 
     onClickLeft() {
         this.counter--;
-                console.log("Count:" + this.counter);
-
         this.itemIndexEvent.emit(this.counter);
     }
 

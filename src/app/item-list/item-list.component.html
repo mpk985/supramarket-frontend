@@ -1,6 +1,6 @@
 
 <div class="row">
-	<div  class="wrapper">
+	<div  *ngIf="items" class="wrapper">
 	
 		<item-card (itemIndexEvent)="updateIndex($event)" 
 		  [(item)]="item">
@@ -8,9 +8,16 @@
 
 	</div>
 </div>
+<div class="foot">
+	<span class="item-info">
+		{{item.year}}
+		 {{item.make}} {{item.model}} {{item.trim}} | {{item.color}} | {{item.vin}} | {{item.price}}
+
+	</span>
+</div>
 
 <!--
 	<div class="alert alert-danger">
   <span class="glyphicon glyphicon-exclamation-sign"></span>
   {{error}} Project for-sale coming soon!
-</div> -->
+</div>  -->

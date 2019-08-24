@@ -13,5 +13,19 @@ h3{
 	text-align: center;
 }
 .row{
-	max-height: 80%;
+	height: 75%;
+}
+.foot{
+	margin: 0px;
+	vertical-align: middle;
+	position: absolute;
+	bottom: 0;
+	max-height: 50px;
+	display: inline-block;
+	background-color: #FFFFFF;
+}
+.item-info{
+	margin-left: 100px;
+	vertical-align: text-top;
+	text-align: justify;
 }

@@ -1,6 +1,7 @@
 .col-sm{
 	float: center;
 	height: 700px;
+	display: inline;
 }
 
 .img-color {
@@ -17,7 +18,6 @@ img {
     height: 100%;
 }
 .col-sm-2{
-	background-color: #ffffff;
 	vertical-align: center;
 	height: 100%;
 }
@@ -25,3 +25,5 @@ img {
 	vertical-align: center;
 	color: #fdfdfd;
 }
+
+
