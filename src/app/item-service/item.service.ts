@@ -25,6 +25,15 @@ export class ItemService {
             .catch(this.handleError);
     }
 
+    getAllSoldItems() : Promise<Item[]> {
+        return this.http.get(this.url+'/?sold=true')
+            .toPromise()
+            .then((response) => response.json() as Item[])
+            .catch(this.handleError);
+    }
+
+
+
     getItemById(inventoryId: number) : Promise<Item> {
         return this.http.get(this.url + `/${inventoryId}`)
             .toPromise()

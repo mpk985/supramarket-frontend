@@ -12,5 +12,9 @@
 }
 .container{
 	background-color: #FFFFFF;
+	padding-top: 30px;
 	text-align: center;
+	height: 75%;
+	vertical-align: middle;
+	position: block;
 }

@@ -59,7 +59,7 @@ import { NewsService } from './news-service/news.service';
                component: ItemDetailsComponent
            },
            {
-               path: 'projects',
+               path: 'sold',
                component: PostListComponent
            },
            {
@@ -67,7 +67,7 @@ import { NewsService } from './news-service/news.service';
                component: ItemListComponent
            },
            {
-               path: 'projects/:postId',
+               path: 'parts',
                component: PostDetailsComponent
            },
            {

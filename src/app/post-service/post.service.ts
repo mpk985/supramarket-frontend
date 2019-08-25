@@ -59,7 +59,7 @@ export class PostService {
 
     private handleError(error: any): Promise<string> {
         console.log(error);
-        return Promise.reject("Unable to retrieve post data.");
+        return Promise.reject("Parts list currently unavailable.  Check back later");
     }
 
     private handlePostError(error: any): Promise<string> {

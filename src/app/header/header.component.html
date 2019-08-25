@@ -11,14 +11,14 @@
           </!-->
           <li class="pill-style nav-link" [ngClass]="{'active': currentRoute === 'home'}"><a (click)="goToRoute('home')">Cars</a></li>
 
-           <li class="pill-style nav-link" [ngClass]="{'active': currentRoute === 'items'}">
-            <a (click)="goToRoute('items')">Parts</a></li>
+           <li class="pill-style nav-link" [ngClass]="{'active': currentRoute === 'parts'}">
+            <a (click)="goToRoute('parts')">Parts</a></li>
 
-            <li class="pill-style nav-link"[ngClass]="{'active': currentRoute === 'projects'}">
-            <a (click)="goToRoute('projects')">Sold</a></li>
+            <li class="pill-style nav-link"[ngClass]="{'active': currentRoute === 'sold'}">
+            <a (click)="goToRoute('sold')">Sold</a></li>
 
            <li class="pill-style nav-link"[ngClass]="{'active': currentRoute === 'about'}">
-            <a (click)="goToRoute('about')">Contact Us</a></li>
+            <a (click)="goToRoute('about')">About Us</a></li>
        </ul>
    </div>
 
