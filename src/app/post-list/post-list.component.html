@@ -1,17 +1,17 @@
 
 <div class="row">
-	<div  *ngIf="items" class="wrapper">
+	<div  *ngIf="soldItems" class="wrapper">
 	
 		<item-card (itemIndexEvent)="updateIndex($event)" 
-		  [(item)]="item">
+		  [(item)]="soldItem">
 		</item-card>
 
 	</div>
 </div>
-<div class="foot">
+<div *ngIf="soldItem" class="foot">
 	<span class="item-info">
-		{{item.year}}
-		 {{item.make}} {{item.model}} {{item.trim}} | {{item.color}} | {{item.vin}} | {{item.price}}
+		{{soldItem.year}}
+		 {{soldItem.make}} {{soldItem.model}} {{soldItem.trim}} | {{soldItem.color}} | {{soldItem.vin}} 
 
 	</span>
 </div>

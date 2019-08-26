@@ -7,3 +7,26 @@ h3{
 	margin: 0px;
 	color: #42f445;
 }
+
+.card{
+	display: inline-block;
+}
+.wrapper{
+	text-align: center;
+}
+.row{
+	height: 75%;
+}
+.foot{
+	width: 100%;
+	margin: 0px;
+	padding-top: 20px;
+	text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	max-height: 50px;
+	display: inline-block;
+	background-color: #FFFFFF;
+}
+.item-info{
+}

@@ -21,11 +21,11 @@ export class HeaderComponent {
                if (event.url.indexOf('home') > -1){
                  this.currentRoute = 'home';
                }
-               else if (event.url.indexOf('items') > -1) {
-                   this.currentRoute = 'items';
+               else if (event.url.indexOf('sold') > -1) {
+                   this.currentRoute = 'sold';
                } 
-               else if(event.url.indexOf('projects') > -1){
-                   this.currentRoute = 'projects';
+               else if(event.url.indexOf('parts') > -1){
+                   this.currentRoute = 'parts';
                }
                else if (event.url.indexOf('about') > -1) {
                    this.currentRoute = 'about';

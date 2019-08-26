@@ -13,7 +13,7 @@
         padding-top: 5px;
     }
   }
-
+/*	Navbar and Pill styling	*/
 
 .navbar {
    background-color:#ffffff;
@@ -24,6 +24,7 @@
    padding-left: 5px;
    margin-left: 10px;
    border-style: none;  
+   display: inline-block;
 }
 
 .title-bar{
@@ -44,29 +45,6 @@
 	padding-right: 0px;
 }
 
-.title-text{
-	font-family: "SF Pro Display", Monaco, monospace;
-	font-size: 2.5em;
-	vertical-align: middle;
-	padding-left: 10px;
-	font-style: italic;
-}
-.title-text>a,
-.title-text,a:link,
-.title-text,a:visited,
-.title-text,a:hover,
-.title-text,a:active {
-	text-decoration: none;
-	color: red;
-}
-.title-script{
-	font-family: "SF Pro Display", Monaco, monospace;
-	font-style: italic;
-	font-size: 1.25em;
-	vertical-align: bottom;
-	padding-left:0px;
-	font-style: italic;
-}
 
 .navbar-collapse{
 	background-color:#ffffff;
@@ -96,13 +74,13 @@
 	background-color:#fbfbfb;
 	font-style: italic;
 }
+
+
 .pill-style{
 	border-radius: 2px;
 	margin-right: 5px;
 	margin-left: 30px;
 }
-
-
 
 .nav-link>a,
 .nav-link>a:link,
@@ -110,6 +88,7 @@
 	color: #000000;
 	text-shadow: 2px 1px 3px #ffffff;
 }
+
 .nav-link>a:hover,
 .nav-link>a:focus {
     text-decoration: none;
@@ -119,5 +98,35 @@
 
 .title img {
    display:inline;
+}
+
+/*	Styling for Social Media Buttons	*/
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+}
+
+.fa-facebook:visited,
+.fa-facebook:hover {
+    opacity: 0.7;
+    background-color: #3B5998;
+}
+.fa-instagram:visited,
+.fa-instagram:hover {
+  	background-color: #ff6600;
+  	opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background-color: #ff6600;
+  color: white;
 }
 

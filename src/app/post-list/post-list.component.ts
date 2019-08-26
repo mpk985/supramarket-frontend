@@ -10,10 +10,13 @@ import { Item } from '../item-service/item';
    styleUrls: ['post-list.component.css']
 })
 export class PostListComponent {
-    private postService: PostService;
     public posts: Post[];
     public error: string;
     public soldItems: Item[];
+    public soldItem: Item;
+    private index: number = 0;
+
+    private postService: PostService;
     private itemService: ItemService;
 
 
@@ -30,8 +33,16 @@ export class PostListComponent {
         this.itemService.getAllSoldItems()
         .then((items) => {
             this.soldItems = items;
+            this.soldItem = this.soldItems[this.index];
         })
         .catch((error) => this.error = error);
+    }
+
+
+    updateIndex(counter: number){
+        this.index = Math.abs(counter%this.soldItems.length);
+        console.log("Index updated: " + this.index);
+        this.soldItem = this.soldItems[this.index];
     }
  
 
