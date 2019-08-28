@@ -1,5 +1,6 @@
 {
- "name": "App",
+ "name": "VHTees",
+ "display": "browser",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
@@ -39,3 +40,4 @@
   }
  ]
 }
+

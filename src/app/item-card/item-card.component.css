@@ -1,3 +1,24 @@
+  /*  iPhone XS~375px / XR & XS-Max ~414px */
+@media only screen and (max-width: 450px) {
+    img.main-photo{
+    	width: 100%;
+    	height: auto;
+    	padding-left: 0px;
+    	padding-right: 0px;
+    }
+    img{
+    	display: inline-block;
+
+    }
+    .col-sm-2{
+    	height: auto;
+    }
+    .col-sm-8{
+    	width: 100%;
+    	height: auto;
+    }
+  }
+
 .col-sm{
 	float: center;
 	height: 700px;
@@ -23,7 +44,7 @@ img {
 }
 .glyphicon{
 	vertical-align: center;
-	color: #fdfdfd;
+	color: #F2F2F2;
 }
 
 

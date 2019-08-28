@@ -11,9 +11,9 @@ import { ItemCardComponent } from '../item-card/item-card.component';
 })
 export class ItemListComponent {
     private itemService: ItemService;
-    private items: Item[];
+    public items: Item[];
     private index: number = 0;
-    private item: Item;
+    public item: Item;
 
     public error: string;
 

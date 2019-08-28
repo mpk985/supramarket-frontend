@@ -4,14 +4,42 @@
         min-height: 20px;
         width: auto; 
     }
+    .navbar{
+      width: 50%;
+      float:left;
+    }
 
   }
+  /*  iPhone XS~375px / XR & XS-Max ~414px */
 @media only screen and (max-width: 450px) {
     img.title-bar { 
-        max-height: 30px;
+        max-height: 50px;
+        float: none;
         width: auto; 
+        display: block;
         padding-top: 5px;
+        margin-left: auto ;
+        margin-right: auto;
+    } 
+
+    .navbar-collapse{
+      width: 100%;
+      float: left;
     }
+    .nav-default{
+      float: left;
+      margin: 0px;
+      padding: 0px;
+    }
+    .pill-style{
+      border-radius: 2px;
+      margin-right: 2px;
+      margin-left: 2px;
+      padding: 0px;
+      width: 15%;
+      font-size: 3vw;
+    }
+
   }
 /*	Navbar and Pill styling	*/
 

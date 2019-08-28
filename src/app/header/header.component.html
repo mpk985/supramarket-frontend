@@ -7,6 +7,7 @@
     </a>    
 <!-- </div> -->
    <div class="navbar-collapse" role="navigation">
+
       <ul class="nav nav-pills nav-default">
           <!-- Notice: For Home to active, it must evalute
               TRUE for ngclass-active==="/" or "home" etc>
@@ -20,15 +21,16 @@
             <a (click)="goToRoute('sold')">Sold</a></li>
 
            <li class="pill-style nav-link"[ngClass]="{'active': currentRoute === 'about'}">
-            <a (click)="goToRoute('about')">About Us</a></li>
-
+            <a (click)="goToRoute('about')">About</a></li>
+            <!--
             <li>
                 <a href="https://www.facebook.com/SupraMarket/" target="_blank" class="fa fa-facebook"></a>
             </li>
             <li>
             <a href="https://www.instagram.com/supramarket/" class="fa fa-instagram" target="_blank"></a>
-          </li>
+          </li> -->
        </ul>
+
    </div>
  </div> <!-- added for supramarket styling changes -->
 

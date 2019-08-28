@@ -1,1 +1,2 @@
-applications: - name: Punch-and-Pi  memory: 64M   health-check-type: port   buildpack: staticfile_buildpack   path: dist/   routes:   - route: punchandpi.com
+applications: 
+- name: VHTees  memory: 64M   health-check-type: port   buildpack: staticfile_buildpack   path: dist/   routes:   - route: thesupramarket.com
