@@ -1,3 +1,3 @@
 export const environment = {   
 	production: true,
-	apiUrl: 'http://thesupramarket.com/api/v1/' };
+	apiUrl: 'https://thesupramarket.com/api/v1/' };

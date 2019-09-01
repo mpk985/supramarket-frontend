@@ -1,11 +1,22 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="navbar navbar-default">
+
+<!-- Mobile Row 1 -->
+  <div class="image-bar">
     <a href="/">
       <img src="html/assets/titlebar.png" class="title-bar">
-
     </a>    
-<!-- </div> -->
+          <div class="social-wrapper"> 
+            <a href="https://www.facebook.com/SupraMarket/" target="_blank" class="fa fa-facebook"></a>
+            
+            <a href="https://www.instagram.com/supramarket/" class="fa fa-instagram" target="_blank"></a>
+         </div> 
+
+  </div>
+
+
+<!-- Mobile Row 2 -->
    <div class="navbar-collapse" role="navigation">
 
       <ul class="nav nav-pills nav-default">
@@ -17,10 +28,10 @@
            <li class="pill-style nav-link" [ngClass]="{'active': currentRoute === 'parts'}">
             <a (click)="goToRoute('parts')">Parts</a></li>
 
-            <li class="pill-style nav-link"[ngClass]="{'active': currentRoute === 'sold'}">
+            <li class="pill-style nav-link" [ngClass]="{'active': currentRoute === 'sold'}">
             <a (click)="goToRoute('sold')">Sold</a></li>
 
-           <li class="pill-style nav-link"[ngClass]="{'active': currentRoute === 'about'}">
+           <li class="pill-style nav-link" [ngClass]="{'active': currentRoute === 'about'}">
             <a (click)="goToRoute('about')">About</a></li>
             <!--
             <li>
@@ -30,7 +41,8 @@
             <a href="https://www.instagram.com/supramarket/" class="fa fa-instagram" target="_blank"></a>
           </li> -->
        </ul>
-
    </div>
+
+
  </div> <!-- added for supramarket styling changes -->
 

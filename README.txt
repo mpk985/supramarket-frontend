@@ -14,3 +14,4 @@ http://localhost:4200/   <----Main site
 Local Front End w/ remote access:
 
 ng serve --host 0.0.0.0
+ng serve --env=dev --host 0.0.0.0 [testing Mobile from desktop host]

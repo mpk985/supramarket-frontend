@@ -14,7 +14,7 @@ export class PostListComponent {
     public error: string;
     public soldItems: Item[];
     public soldItem: Item;
-    private index: number = 0;
+    private index: number = 1;
 
     private postService: PostService;
     private itemService: ItemService;
