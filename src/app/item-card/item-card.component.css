@@ -1,5 +1,6 @@
   /*  iPhone XS~375px / XR & XS-Max ~414px */
 @media only screen and (max-width: 450px) {
+	
     img.main-photo{
     	width: 100%;
     	height: auto;
@@ -8,7 +9,6 @@
     }
     img{
     	display: inline-block;
-
     }
     .col-sm-2{
     	height: auto;

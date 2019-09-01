@@ -1,15 +1,22 @@
 @media only screen and (max-width: 450px) {
 	
 	.wrapper{
-		height: 25%;
+		padding: 0px;
+		height: 10%;
+		vertical-align: middle;
 	}
 	.item-card{
 		margin-top: 0px;
 		padding-top: 0px;
+		vertical-align: middle;
 	}
 	.row{
+		max-height: 65%;
 		padding: 0px;
-		margin: 0px;
+		margin-top: auto;
+		margin-bottom: auto;
+		display: inline-block;
+		vertical-align: middle;
 	}
 
 }
