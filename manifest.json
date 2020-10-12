@@ -1,5 +1,5 @@
 {
- "name": "VHTees",
+ "name": "The Supra Market",
  "display": "browser",
  "icons": [
   {
@@ -38,6 +38,8 @@
    "type": "image\/png",
    "density": "4.0"
   }
- ]
+ ],
+ "start_url": "/",
+ "background_color": "#F2F2F2"
 }
 

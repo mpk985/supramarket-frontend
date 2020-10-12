@@ -22,6 +22,8 @@ import { NewsListComponent } from './news-list/news-list.component';
 import { NewsCardComponent } from './news-card/news-card.component';
 import { NewsSortPipe } from './news-service/news-sort.pipe';
 import { NewsService } from './news-service/news.service';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -40,7 +42,9 @@ import { NewsService } from './news-service/news.service';
        ContactUsComponent,
        NewsListComponent,
        NewsCardComponent,
-       NewsSortPipe
+       NewsSortPipe,
+       FooterComponent,
+       HomeComponent
     ],
    imports: [
        BrowserModule, 
@@ -64,7 +68,7 @@ import { NewsService } from './news-service/news.service';
            },
            {
                path: 'home',
-               component: ItemListComponent
+               component: HomeComponent
            },
            {
                path: 'parts',

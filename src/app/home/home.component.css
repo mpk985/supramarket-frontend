@@ -1,0 +1,51 @@
+@media only screen and (min-width: 200px){
+  .home-container{
+    height: 90%;
+    margin: auto;
+    padding-top: 5px;
+  }
+  .row{
+    border-style: double;
+    margin: auto;
+    text-align: center;
+    height: 33%;
+    vertical-align: middle;
+  }
+  .home-container{
+  background-color: #FFFFFF;
+  }
+  .col-xs-12{
+    padding-top: 80px;
+    font-family: monospace;
+  }
+}
+  /*   For iPhone layouts */
+@media only screen and (min-width: 600px){
+
+}
+/*  For general iPad layout */
+@media only screen and (device-width: 768px) {
+    
+
+  }
+
+
+
+  /*  iPhone XS~375px / XR & XS-Max ~414px */
+  /*   For iPhone layouts */
+@media only screen and (min-width: 1200px) {
+   
+   
+.home-container{
+  background-color: #FFFFFF;
+  }
+  .col-xs-12{
+    padding-top: 120px;
+  }
+} /*  End of Mobile Device Styling */
+
+
+
+
+
+
