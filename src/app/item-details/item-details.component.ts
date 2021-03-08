@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { ItemService } from '../item-service/item.service';
-import { Item } from '../item-service/item';
+import { ProductService } from '../product-service/product.service';
+import { Product } from '../product-service/product';
 
 @Component({
    selector: 'item-details',
@@ -12,13 +12,13 @@ import { Item } from '../item-service/item';
 export class ItemDetailsComponent {
 
     private inventoryId: number;
-    public item: Item;
+    public item: Product;
     public error: string;
 
-    constructor(route: ActivatedRoute, itemService: ItemService) {
+    constructor(route: ActivatedRoute, itemService: ProductService) {
         route.params.subscribe(params => this.inventoryId = params['inventoryId']);
-        itemService.getItemById(this.inventoryId)
-            .then((item) => this.item = item, (error) => this.error = error);
+        // itemService.getProductById(this.inventoryId)
+            // .then((item) => this.item = item, (error) => this.error = error);
     }
 
 }

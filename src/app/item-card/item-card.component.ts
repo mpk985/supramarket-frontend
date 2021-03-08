@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Item } from '../item-service/item';
+import { Product } from '../product-service/product';
 
 import { Router } from '@angular/router';
 
@@ -14,7 +14,7 @@ export class ItemCardComponent {
     private counter = 0;
 
     @Input()
-    item: Item;
+    item: Product;
 
     @Output()
     itemDeleted = new EventEmitter();
@@ -37,7 +37,7 @@ export class ItemCardComponent {
     }
 
 
-    deleteItem() {
+    deleteProduct() {
         this.itemDeleted.emit(this.item);
     }
     

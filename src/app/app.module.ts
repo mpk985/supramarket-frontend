@@ -6,22 +6,14 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { ItemListComponent } from './item-list/item-list.component';
+//
+import { ProductListComponent } from './product-list/product-list.component';
 import { ItemDetailsComponent } from './item-details/item-details.component';
 import { ItemCardComponent } from './item-card/item-card.component';
-import { ItemService } from './item-service/item.service';
-import { ItemSortPipe } from './item-service/item-sort.pipe';
+//
+import { ProductService } from './product-service/product.service';
+import { ItemSortPipe } from './product-service/item-sort.pipe';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { PostListComponent } from './post-list/post-list.component'
-import { PostSortPipe } from './post-service/post-sort.pipe';
-import { PostCardComponent } from './post-card/post-card.component';
-import { PostService } from './post-service/post.service';
-import { PostDetailsComponent } from './post-details/post-details.component';
-import { EscapeHtmlPipe } from './post-service/post-keep-html.pipe';
-import { NewsListComponent } from './news-list/news-list.component';
-import { NewsCardComponent } from './news-card/news-card.component';
-import { NewsSortPipe } from './news-service/news-sort.pipe';
-import { NewsService } from './news-service/news.service';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 
@@ -30,19 +22,11 @@ import { HomeComponent } from './home/home.component';
    declarations: [
        AppComponent,
        HeaderComponent,
-       ItemListComponent,
+       ProductListComponent,
        ItemDetailsComponent,
        ItemCardComponent,
        ItemSortPipe,
-       PostListComponent,
-       PostDetailsComponent,
-       PostCardComponent,
-       PostSortPipe,
-       EscapeHtmlPipe,
        ContactUsComponent,
-       NewsListComponent,
-       NewsCardComponent,
-       NewsSortPipe,
        FooterComponent,
        HomeComponent
     ],
@@ -55,24 +39,17 @@ import { HomeComponent } from './home/home.component';
                pathMatch: 'full'
            },
            {
-               path: 'items',
-               component: ItemListComponent
+               path: 'products',
+               component: ProductListComponent
            },
             {
                path: 'items/:inventoryId',
                component: ItemDetailsComponent
            },
-           {
-               path: 'sold',
-               component: PostListComponent
-           },
+
            {
                path: 'home',
                component: HomeComponent
-           },
-           {
-               path: 'parts',
-               component: PostDetailsComponent
            },
            {
              path: 'about',
@@ -82,7 +59,7 @@ import { HomeComponent } from './home/home.component';
        HttpModule,
        FormsModule
     ],
-   providers: [ItemService, PostService, NewsService], 
+   providers: [ProductService], 
    bootstrap: [AppComponent]
 })
 export class AppModule { }

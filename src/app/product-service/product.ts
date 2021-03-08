@@ -1,8 +1,8 @@
-export class Item {
-    inventoryId: number;
-    year: string;
-    make: string;
-    model: string;
+export class Product {
+    id: number;
+    title: string;
+    status: string;
+    body_html: string;
     trim: string;
     transmission: string;
     color: string;
