@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ProductService } from '../product-service/product.service';
-import { Product } from '../product-service/product';
+import { Product, ProductVariantList, ProductOptionList, ProductImageList } from '../product-service/product';
 import { ItemCardComponent } from '../item-card/item-card.component';
 
 
@@ -11,28 +11,29 @@ import { ItemCardComponent } from '../item-card/item-card.component';
 })
 export class ProductListComponent {
     private productService: ProductService;
-    public items: Product[];
+    public products: Product[];
     private index: number = 0;
-    public item: Product;
+    public product: Product;
 
     public error: string;
 
-
     constructor(productService: ProductService) {
         this.productService = productService;
-        // productService.getAllProducts()
-        // .then((items) => {
-        //     this.items = items;
-        //     this.item = this.items[this.index+1];
-        // })
-        // .catch((error) => this.error = error);
+        this.productService.getAllProducts()
+        .then((products) => {
+            this.products = products;
+            this.product = this.products[this.index+1];
+                                console.log(this.product);
+
+        })
+        .catch((error) => this.error = error);
     }
 
-    // updateIndex(counter: number){
-    //     this.index = Math.abs(counter%this.items.length);
-    //     console.log("Index updated: " + this.index);
-    //     this.item = this.items[this.index];
-    // }
+    updateIndex(counter: number){
+        this.index = Math.abs(counter%this.products.length);
+        console.log("Index updated: " + this.index);
+        this.product = this.products[this.index];
+    }
 
     // deleteProductFromList(inventoryId: number) {
     //     const index: number = this.items

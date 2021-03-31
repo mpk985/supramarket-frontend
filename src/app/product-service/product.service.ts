@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Product } from './product';
+import { Product, ProductVariantList, ProductOptionList, ProductImageList } from './product';
 import { Http } from '@angular/http';
 import { environment } from '../../environments/environment';
 import 'rxjs/add/operator/toPromise';
@@ -12,18 +12,21 @@ export class ProductService {
 
     private http: Http;
 
-    private url: string = environment.apiUrl+'shop';
+    private url: string = environment.apiUrl+'products';
+
+    private promise: Promise<Product[]>;
 
     constructor(http: Http) {
         this.http = http;
     }
 
-    // getAllProducts() : Promise<Product[]> {
-    //     return this.http.get(this.url+'/?sold=false')
-    //         .toPromise()
-    //         .then((response) => response.json() as Product[])
-    //         .catch(this.handleError);
-    // }
+    getAllProducts() : Promise<Product[]> {
+        this.promise =  this.http.get(this.url)
+            .toPromise()
+            .then((response) => response.json() as Product[])
+            .catch();
+            return this.promise;
+    }
 
     // getAllSoldProducts() : Promise<Product[]> {
     //     return this.http.get(this.url+'/?sold=true')
@@ -66,10 +69,10 @@ export class ProductService {
     //         .catch(this.handleDeleteError);
     // }
 
-    // private handleError(error: any): Promise<string> {
-    //     console.log(error);
-    //     return Promise.reject("Unable to retrieve item data.");
-    // }
+    private handleError(error: any): Promise<string> {
+        console.log(error);
+        return Promise.reject("Unable to retrieve product data.");
+    }
 
     // private handleProductError(error: any): Promise<string> {
     //     console.log(error);

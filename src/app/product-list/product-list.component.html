@@ -1,10 +1,10 @@
 <div class="row">
-	<div  *ngIf="items" class="wrapper">
+	<div  *ngIf="products" class="wrapper">
 	
 		<item-card (itemIndexEvent)="updateIndex($event)" 
-		  [(item)]="item">
+		  [(product)]="product">
 		</item-card>
-
+	
 	</div>
 </div>
 

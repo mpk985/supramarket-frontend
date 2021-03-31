@@ -14,7 +14,7 @@ export class ItemCardComponent {
     private counter = 0;
 
     @Input()
-    item: Product;
+    product: Product;
 
     @Output()
     itemDeleted = new EventEmitter();
@@ -38,7 +38,7 @@ export class ItemCardComponent {
 
 
     deleteProduct() {
-        this.itemDeleted.emit(this.item);
+        this.itemDeleted.emit(this.product);
     }
     
 }
