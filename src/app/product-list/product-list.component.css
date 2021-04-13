@@ -37,6 +37,8 @@ h3{
 }
 .row{
 	height: 75%;
+	margin: auto;
+	width: 90%;
 }
 .foot{
 	width: 100%;

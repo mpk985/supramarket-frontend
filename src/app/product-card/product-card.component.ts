@@ -4,11 +4,11 @@ import { Product } from '../product-service/product';
 import { Router } from '@angular/router';
 
 @Component({
-    selector: 'item-card',
-    templateUrl: 'item-card.component.html',
-    styleUrls: ['item-card.component.css']
+    selector: 'product-card',
+    templateUrl: 'product-card.component.html',
+    styleUrls: ['product-card.component.css']
 })
-export class ItemCardComponent { 
+export class ProductCardComponent { 
     private router: Router;
 
     private counter = 0;

@@ -9,7 +9,7 @@ import { HeaderComponent } from './header/header.component';
 //
 import { ProductListComponent } from './product-list/product-list.component';
 import { ItemDetailsComponent } from './item-details/item-details.component';
-import { ItemCardComponent } from './item-card/item-card.component';
+import { ProductCardComponent} from './product-card/product-card.component';
 //
 import { ProductService } from './product-service/product.service';
 import { ItemSortPipe } from './product-service/item-sort.pipe';
@@ -24,7 +24,7 @@ import { HomeComponent } from './home/home.component';
        HeaderComponent,
        ProductListComponent,
        ItemDetailsComponent,
-       ItemCardComponent,
+       ProductCardComponent,
        ItemSortPipe,
        ContactUsComponent,
        FooterComponent,

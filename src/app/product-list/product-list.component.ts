@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ProductService } from '../product-service/product.service';
 import { Product, ProductVariantList, ProductOptionList, ProductImageList } from '../product-service/product';
-import { ItemCardComponent } from '../item-card/item-card.component';
+import { ProductCardComponent } from '../product-card/product-card.component';
 
 
 @Component({
@@ -13,7 +13,6 @@ export class ProductListComponent {
     private productService: ProductService;
     public products: Product[];
     private index: number = 0;
-    public product: Product;
 
     public error: string;
 
@@ -22,9 +21,6 @@ export class ProductListComponent {
         this.productService.getAllProducts()
         .then((products) => {
             this.products = products;
-            this.product = this.products[this.index+1];
-                                console.log(this.product);
-
         })
         .catch((error) => this.error = error);
     }
@@ -32,7 +28,6 @@ export class ProductListComponent {
     updateIndex(counter: number){
         this.index = Math.abs(counter%this.products.length);
         console.log("Index updated: " + this.index);
-        this.product = this.products[this.index];
     }
 
     // deleteProductFromList(inventoryId: number) {

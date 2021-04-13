@@ -10,7 +10,7 @@ export interface Product {
     bodyHtml?: string;
     productType: string;
     createdAt: Date;
-    updatedA?: Date;
+    updatedAt?: Date;
     publishedAt: Date;
     status: string;
     productVariantList?: Array<ProductVariantList>;

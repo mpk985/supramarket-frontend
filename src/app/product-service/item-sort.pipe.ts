@@ -7,9 +7,9 @@ export class ItemSortPipe implements PipeTransform {
     transform(values: Product[], order?: string) {
         if (values) {
             values.sort((first: Product, second: Product) => {
-                if (first.id < second.id) {
+                if (first.updatedAt < second.updatedAt) {
                     return order === 'asc' ? 1 : -1;
-                } else if (first.id > second.id) {
+                } else if (first.updatedAt > second.updatedAt) {
                     return order === 'des' ? -1 : 1;
                 } else {
                     return 0;
