@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 //
 import { ProductListComponent } from './product-list/product-list.component';
-import { ItemDetailsComponent } from './item-details/item-details.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductCardComponent} from './product-card/product-card.component';
 //
 import { ProductService } from './product-service/product.service';
@@ -23,7 +23,7 @@ import { HomeComponent } from './home/home.component';
        AppComponent,
        HeaderComponent,
        ProductListComponent,
-       ItemDetailsComponent,
+       ProductDetailsComponent,
        ProductCardComponent,
        ItemSortPipe,
        ContactUsComponent,
@@ -43,8 +43,8 @@ import { HomeComponent } from './home/home.component';
                component: ProductListComponent
            },
             {
-               path: 'items/:inventoryId',
-               component: ItemDetailsComponent
+               path: 'products/:id',
+               component: ProductDetailsComponent
            },
 
            {
@@ -52,8 +52,8 @@ import { HomeComponent } from './home/home.component';
                component: HomeComponent
            },
            {
-             path: 'about',
-             component: ContactUsComponent
+             path: 'random',
+             component: ProductDetailsComponent
            }
        ]),
        HttpModule,

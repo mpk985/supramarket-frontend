@@ -15,8 +15,8 @@
 
 
 
-/*  iPad   */
-@media only screen and (min-width: 508) and (max-width: 768) {
+/*  Mobile (L)   */
+@media only screen and (min-device-width: 508) and (max-device-width: 760) {
     .col-sm-4{
         text-align: center;
     }
@@ -28,9 +28,32 @@
     }
 }
 
+/*  For general landscape & iPad layout */
+@media only screen and (min-device-width: 750px)
+                 and (max-device-width: 1366px)
+                and (-webkit-min-device-pixel-ratio: 2) {
+    .col-sm-4{
+        margin-left: 55px;
+        margin-bottom: 20px;
+        float: center;
+        height: 260px;
+        width: 300px;
+        display: inline-block;
+        text-align: center;
+        justify-content: center;
+    }
+    img {
+        padding-left, right,: 10px;
+        padding-top: 10px;
+        width: auto;
+        height: 240px;
+    }
 
-/*  Define Desktop Setting with annotation!! */
-@media only screen and (min-width:800px) {
+ }   
+
+
+/*  MEDIUM Desktop Setting */
+@media only screen and (min-device-width:1024px) {
     .col-sm-4{
         margin-left: 30px;
         margin-bottom: 20px;
@@ -39,9 +62,10 @@
         width: 350px;
     	display: inline-block;
         text-align: center;
-        border: 1px solid;
-        border-radius: 4px;
         justify-content: center;
+    }
+    .col-sm-4:hover{
+        box-shadow: 10px 10px 5px grey;
     }
     img {
     	padding-left, right,: 10px;
@@ -51,4 +75,26 @@
     }
 }
 
-
+/*  L/XL Desktop Setting */
+@media only screen and (min-device-width:1424px)
+ {
+    .col-sm-4{
+        margin-left: 65px;
+        margin-bottom: 20px;
+        float: center;
+        height: 400px;
+        width: 450px;
+        display: inline-block;
+        text-align: center;
+        justify-content: center;
+        font-size: large;
+    }
+    .col-sm-4:hover{
+        box-shadow: 10px 10px 5px grey;
+    }
+    img {
+        padding-top: 15px;
+        width: auto;
+        height: 320px;
+    }
+}

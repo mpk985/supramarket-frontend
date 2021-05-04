@@ -1,0 +1,172 @@
+/*  For general landscape & iPad layout */
+@media only screen and (min-device-width: 750px)
+                 and (max-device-width: 1200px)
+                and (-webkit-min-device-pixel-ratio: 2) {
+.row {
+		text-align: center;
+		display: flex;
+		align-items: center;
+	}
+	.col-xs-12{
+		display: inline-block;
+	}
+	.col-xs-9{
+		display: inline-block;
+	}
+	.col-xs-3{
+		margin: auto;
+		display: inline-block;
+		float: center;
+		vertical-align: middle;
+		width: 60%;
+	}
+	
+	.product-image{
+		border-radius: 8px;
+		display: block;
+		margin: auto;
+		border: 1px solid;
+		width: auto;
+		height: 600px;
+	}
+	.html-body{
+		font-family: Arial, "Helvetica", serif;
+		font-size: 8px;
+		margin-top: 15px;
+		padding-top: 5px;
+		width: 100%;
+		margin-right: 0px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	#price{
+		font-family: cursive;
+		display: grid;
+		text-align: center;
+		font-weight: bold;
+		font-size: 16px;
+		justify-content: center;
+	}
+	#title{
+		font-family: Arial, "Helvetica", serif;
+		font-size: 13px;
+	}
+	.buy-image{
+		height: 80px;
+		border: 0px;
+	}
+
+}
+
+
+/*	Medium Desktop +  Laptops	*/
+@media only screen and (min-width:1280px)
+ {
+	.row {
+		text-align: center;
+		display: flex;
+		align-items: center;
+	}
+	.col-xs-12{
+		display: inline-block;
+	}
+	.col-xs-9{
+		display: inline-block;
+	}
+	.col-xs-3{
+		margin: auto;
+		display: inline-block;
+		float: center;
+		vertical-align: middle;
+	}
+	
+	img {
+		border-radius: 8px;
+		display: block;
+		margin: auto;
+		border: 1px solid;
+		width: auto;
+		height: 330px;
+	}
+	.html-body{
+		font-family: Arial, "Helvetica", serif;
+		font-size: 8px;
+		margin-top: 15px;
+		padding-top: 5px;
+		width: 100%;
+		margin-right: 0px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	#price{
+		font-family: cursive;
+		display: grid;
+		text-align: center;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	#title{
+		font-family: Arial, "Helvetica", serif;
+		font-size: 13px;
+	}
+	.buy-image{
+		height: 40px;
+		border: 0px;
+	}
+}
+
+
+/*  L/XL Desktop Setting */
+@media only screen and (min-device-width:1424px)
+{
+	.row {
+		text-align: center;
+		display: flex;
+		align-items: center;
+	}
+	.col-xs-12{
+		display: inline-block;
+	}
+	.col-xs-9{
+		display: inline-block;
+	}
+	.col-xs-3{
+		margin: auto;
+		display: inline-block;
+		float: center;
+		vertical-align: middle;
+	}
+	.product-image {
+		border-radius: 8px;
+		display: block;
+		margin: auto;
+		border: 1px solid;
+		width: auto;
+		height: 550px;
+	}
+	.html-body{
+		font-family: Arial, "Helvetica", serif;
+		font-size: 10px;
+		margin-top: 15px;
+		padding-top: 5px;
+		width: 100%;
+		margin-right: 0px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	#price{
+		font-family: cursive;
+		display: grid;
+		text-align: center;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	#title{
+		font-family: Arial, "Helvetica", serif;
+		font-size: 13px;
+	}
+	.buy-image{
+		height: 80px;
+		border: 0px;
+	}
+}

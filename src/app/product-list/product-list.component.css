@@ -1,15 +1,4 @@
 @media only screen and (max-width: 450px) {
-	
-	.wrapper{
-		padding: 0px;
-		height: 10%;
-		vertical-align: middle;
-	}
-	.item-card{
-		margin-top: 0px;
-		padding-top: 0px;
-		vertical-align: middle;
-	}
 	.row{
 		max-height: 65%;
 		padding: 0px;
@@ -29,27 +18,9 @@ h3{
 	margin: 0px;
 	padding: 10px 30px;
 }
-.card{
-	display: inline-block;
-}
-.wrapper{
-	text-align: center;
-}
 .row{
 	height: 75%;
 	margin: auto;
 	width: 90%;
-}
-.foot{
-	width: 100%;
-	margin: 0px;
-	padding-top: 20px;
 	text-align: center;
-	vertical-align: middle;
-	position: absolute;
-	max-height: 50px;
-	display: inline-block;
-	background-color: #FFFFFF;
-}
-.item-info{
 }

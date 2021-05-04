@@ -12,7 +12,9 @@ export class ProductService {
 
     private http: Http;
 
-    private url: string = environment.apiUrl+'products';
+    private baseUrl: string = environment.apiUrl+'products';
+
+    private randomUrl: string = environment.apiUrl+'random';
 
     private promise: Promise<Product[]>;
 
@@ -20,12 +22,27 @@ export class ProductService {
         this.http = http;
     }
 
+   
     getAllProducts() : Promise<Product[]> {
-        this.promise =  this.http.get(this.url)
+        this.promise =  this.http.get(this.baseUrl)
             .toPromise()
             .then((response) => response.json() as Product[])
             .catch();
             return this.promise;
+    }
+
+    getProductById(id: number) : Promise<Product> {
+        return this.http.get(this.baseUrl + `/${id}`)
+            .toPromise()
+            .then(response => response.json() as Product)
+            .catch();
+    }
+
+    getRandomProduct() : Promise<Product> {
+        return this.http.get(this.randomUrl)
+            .toPromise()
+            .then(response => response.json() as Product)
+            .catch();
     }
 
     // getAllSoldProducts() : Promise<Product[]> {
@@ -35,14 +52,6 @@ export class ProductService {
     //         .catch(this.handleError);
     // }
 
-
-
-    // getProductById(inventoryId: number) : Promise<Product> {
-    //     return this.http.get(this.url + `/${inventoryId}`)
-    //         .toPromise()
-    //         .then(response => response.json() as Product)
-    //         .catch(this.handleError);
-    // }
 
     // getImgByInventoryId(inventoryId: number) : Promise<Product> {
     //     return this.http.get(this.url + '/${')

@@ -45,7 +45,6 @@
   }
   img{
     max-height: 100px;  
-    text-align: center;
   }
 
 } /*  End of Mobile Device Styling */
@@ -55,9 +54,12 @@
 
 
 /*  For general landscape & iPad layout */
-@media only screen and (min-width: 750px) {
+@media only screen and (min-device-width: 750px)
+                 and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
   .row{
       border-style: none;
+      height: 130px;
   }
   .col-xs-6{
       width: 50%;
@@ -67,6 +69,7 @@
   }
   img{
     text-align: center;
+    margin: 10px 0 10px 100px;
   }
 }   
 
@@ -90,10 +93,31 @@ BEGIN  DESKTOP STYLING
     img{
     max-height: 80px;  
     text-align: center;
+    margin: 0 0 0 0;
   }
 }
 
-
+/*  L/XL Desktop Setting */
+@media only screen and (min-device-width:1424px)
+ {
+  .col-xs-6{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+  }
+  .row{
+    padding:0px;
+    border-style: none;
+    margin-left:15px;
+    margin-right:15px;
+    height: 120px;
+  }
+    img{
+    max-height: 110px;  
+    text-align: center;
+    margin: 0 0 0 0;
+  }
+}
 
 /*	Styling for Social Media Buttons	*/
 .fa {
@@ -103,7 +127,7 @@ BEGIN  DESKTOP STYLING
   width: 40px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 10px;
+  margin: 5px 5px;
 }
 
 .fa-facebook:visited,
