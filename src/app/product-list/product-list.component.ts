@@ -25,6 +25,15 @@ export class ProductListComponent {
         .catch((error) => this.error = error);
     }
 
+    filterAvailableInventory(product: Product) {
+        for (let index in product.productVariantList){
+            if( product.productVariantList[index].inventoryQuantity > "0"){
+                    return true;
+            }
+        }
+        return false;
+    }
+
     updateIndex(counter: number){
         this.index = Math.abs(counter%this.products.length);
         console.log("Index updated: " + this.index);

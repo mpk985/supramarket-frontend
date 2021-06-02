@@ -31,7 +31,8 @@
 	}
 	.html-body{
 		font-family: Arial, "Helvetica", serif;
-		font-size: 8px;
+		font-weight: bold;
+		font-size: 1em;
 		margin-top: 15px;
 		padding-top: 5px;
 		width: 100%;
@@ -44,7 +45,7 @@
 		display: grid;
 		text-align: center;
 		font-weight: bold;
-		font-size: 16px;
+		font-size: 3em;
 		justify-content: center;
 	}
 	#title{
@@ -53,6 +54,10 @@
 	}
 	.buy-image{
 		height: 80px;
+		border: 0px;
+	}
+	.sold-out{
+		height: 60px;
 		border: 0px;
 	}
 
@@ -90,7 +95,8 @@
 	}
 	.html-body{
 		font-family: Arial, "Helvetica", serif;
-		font-size: 8px;
+		font-weight: bold;
+		font-size: 1em;
 		margin-top: 15px;
 		padding-top: 5px;
 		width: 100%;
@@ -103,7 +109,7 @@
 		display: grid;
 		text-align: center;
 		font-weight: bold;
-		font-size: 16px;
+		font-size: 2em;
 	}
 	#title{
 		font-family: Arial, "Helvetica", serif;
@@ -112,6 +118,12 @@
 	.buy-image{
 		height: 40px;
 		border: 0px;
+	}
+	.sold-out{
+		height: 50px;
+		border: 0px;
+		display: inline-block;
+		margin: auto;
 	}
 }
 
@@ -129,6 +141,9 @@
 	}
 	.col-xs-9{
 		display: inline-block;
+		display: grid;
+		text-align: center;
+		align-items: center;
 	}
 	.col-xs-3{
 		margin: auto;
@@ -146,7 +161,8 @@
 	}
 	.html-body{
 		font-family: Arial, "Helvetica", serif;
-		font-size: 10px;
+		font-weight: bold;
+		font-size: 1em;
 		margin-top: 15px;
 		padding-top: 5px;
 		width: 100%;
@@ -159,7 +175,7 @@
 		display: grid;
 		text-align: center;
 		font-weight: bold;
-		font-size: 16px;
+		font-size: 3em;
 	}
 	#title{
 		font-family: Arial, "Helvetica", serif;
@@ -167,6 +183,10 @@
 	}
 	.buy-image{
 		height: 80px;
+		border: 0px;
+	}
+	.sold-out{
+		height: 60px;
 		border: 0px;
 	}
 }

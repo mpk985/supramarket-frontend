@@ -1,10 +1,7 @@
 <!--<div class="row justify-content-center">-->
 	<div  *ngIf="products" class="row justify-content-center">
-	
-		<product-card *ngFor="let product of products | itemSort:'des'"
-		  [product]="product">
+		<product-card *ngFor="let product of products | itemSort:'des'" [product]="product">
 		</product-card>
-	
 	</div>
 <!--</div>-->
 

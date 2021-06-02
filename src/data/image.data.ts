@@ -1,0 +1,46 @@
+export const images = [
+{
+    id:1,
+    url:"../../html/assets/img1.jpeg",
+},
+{
+  id:2,
+  url:"../../html/assets/img2.jpeg",
+},
+{
+  id:3,
+  url:"../../html/assets/img3.jpeg",
+},
+{
+  id:4,
+  url:"../../html/assets/img4.jpeg",
+},
+{
+  id:5,
+  url:"../../html/assets/img5.jpeg",
+},
+{
+  id:6,
+  url:"../../html/assets/img6.jpeg",
+},
+{
+  id:7,
+  url:"../../html/assets/img7.jpg",
+},
+{
+  id:8,
+  url:"../../html/assets/img8.jpg",
+},
+{
+  id:9,
+  url:"../../html/assets/img9.jpg",
+},
+{
+  id:10,
+  url:"../../html/assets/img10.jpg",
+},
+{
+  id:11,
+  url:"../../html/assets/img11.jpg",
+},
+];

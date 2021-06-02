@@ -11,11 +11,15 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductCardComponent} from './product-card/product-card.component';
 //
-import { ProductService } from './product-service/product.service';
 import { ItemSortPipe } from './product-service/item-sort.pipe';
+import { CallbackPipe } from './product-service/callback.pipe';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { ImageLightboxComponent } from './image-lightbox/image-lightbox.component';
+//Services
+import { ProductService } from './product-service/product.service';
+import { ImageService } from './image-service/image.service';
 
 
 @NgModule({
@@ -26,9 +30,11 @@ import { HomeComponent } from './home/home.component';
        ProductDetailsComponent,
        ProductCardComponent,
        ItemSortPipe,
+       CallbackPipe,
        ContactUsComponent,
        FooterComponent,
-       HomeComponent
+       HomeComponent,
+       ImageLightboxComponent,
     ],
    imports: [
        BrowserModule, 
@@ -54,12 +60,16 @@ import { HomeComponent } from './home/home.component';
            {
              path: 'random',
              component: ProductDetailsComponent
+           },
+           {
+              path: 'archive',
+              component: ImageLightboxComponent
            }
        ]),
        HttpModule,
        FormsModule
     ],
-   providers: [ProductService], 
+   providers: [ProductService, ImageService], 
    bootstrap: [AppComponent]
 })
 export class AppModule { }

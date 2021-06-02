@@ -33,4 +33,13 @@ export class ProductDetailsComponent {
         );
     }
 
+    showBuyButton(product: Product) {
+      for (let index in product.productVariantList){
+            if( product.productVariantList[index].inventoryQuantity > "0"){
+                    return true;
+            }
+        }
+        return false;
+    }
+
 }

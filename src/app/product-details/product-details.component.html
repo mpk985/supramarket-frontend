@@ -14,16 +14,28 @@
 
    <div class="row row-no-gutters">
      <div class="col-xs-3">
-      <div class="html-body" [innerHTML]="product.bodyHtml">
+        <div class="html-body" [innerHTML]="product.bodyHtml">
+        </div>
       </div>
     </div>
-  </div>
-  <div class="row row-no-gutters" id="details">
+
+
+    <div *ngIf="showBuyButton(product); else soldOut" class="row row-no-gutters" id="details">
       <div class="col-xs-3" id="price">
-      ${{product.productVariantList[0].price}}
-      <img class="buy-image" src="html/assets/buy.png">
+        ${{product.productVariantList[0].price}}
+        <img class="buy-image" src="html/assets/buy.png">
+      </div>
     </div>
-  </div>
+
+    <ng-template #soldOut>
+      <div class="row row-no-gutters">
+        <div class="col-xs-12">
+          <img class="sold-out" src="html/assets/soldout.png">
+        </div>
+      </div>
+    </ng-template>
+
+</div>
 
   <div *ngIf="error" class="alert alert-danger"> 
   <span class="glyphicon glyphicon-exclamation-sign"></span>
