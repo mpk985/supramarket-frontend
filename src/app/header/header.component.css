@@ -16,16 +16,16 @@
   height: 100%;
   vertical-align: middle;
 }
-    img{
-    max-height: 100%;  
-    top: 0;
-    bottom: 10;
-    left: 00;
-    right: 0;
-    left-margin: auto;
-    right-margin: auto;
-    float: left;
-  }
+  img{
+  max-height: 100%;
+  top: 0;
+  bottom: 10;
+  left: 00;
+  right: 0;
+  left-margin: auto;
+  right-margin: auto;
+  float: left;
+}
 }
 
   /*   For iPhone layouts */
@@ -44,7 +44,8 @@
     height: 100px;
   }
   img{
-    max-height: 100px;  
+    max-height: 100px;
+    max-width:  220px;  
   }
 
 } /*  End of Mobile Device Styling */
@@ -92,6 +93,7 @@ BEGIN  DESKTOP STYLING
   }
     img{
     max-height: 80px;  
+    max-width:  120px;
     text-align: center;
     margin: 0 0 0 0;
   }
@@ -113,7 +115,8 @@ BEGIN  DESKTOP STYLING
     height: 120px;
   }
     img{
-    max-height: 110px;  
+    max-width: 120px;
+    max-height: 90px;  
     text-align: center;
     margin: 0 0 0 0;
   }
