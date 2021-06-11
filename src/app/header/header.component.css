@@ -115,8 +115,8 @@ BEGIN  DESKTOP STYLING
     height: 120px;
   }
     img{
-    max-width: 120px;
-    max-height: 90px;  
+    max-height:180px; 
+    max-width:  200px; 
     text-align: center;
     margin: 0 0 0 0;
   }
