@@ -1,1 +1,1 @@
-export const environment = {   apiUrl: 'http://192.168.1.205:8080/api/v1/' } ;
+export const environment = {   apiUrl: 'http://192.168.1.112:8080/api/v1/' } ;

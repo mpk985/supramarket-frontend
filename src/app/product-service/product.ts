@@ -13,6 +13,7 @@ export interface Product {
     updatedAt?: Date;
     publishedAt: Date;
     status: string;
+    productUrl: string;
     productVariantList?: Array<ProductVariantList>;
     productOptionList?: Array<ProductOptionList>;
     productImageList?: Array<ProductImageList>;

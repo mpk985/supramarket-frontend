@@ -27,7 +27,7 @@ export class ProductService {
         this.promise =  this.http.get(this.baseUrl)
             .toPromise()
             .then((response) => response.json() as Product[])
-            .catch();
+            .catch(this.handleError);
             return this.promise;
     }
 
@@ -35,14 +35,14 @@ export class ProductService {
         return this.http.get(this.baseUrl + `/${id}`)
             .toPromise()
             .then(response => response.json() as Product)
-            .catch();
+            .catch(this.handleError);
     }
 
     getRandomProduct() : Promise<Product> {
         return this.http.get(this.randomUrl)
             .toPromise()
             .then(response => response.json() as Product)
-            .catch();
+            .catch(this.handleError);
     }
 
     // getAllSoldProducts() : Promise<Product[]> {

@@ -23,7 +23,7 @@
     <div *ngIf="showBuyButton(product); else soldOut" class="row row-no-gutters" id="details">
       <div class="col-xs-3" id="price">
         ${{product.productVariantList[0].price}}
-        <img class="buy-image" src="html/assets/buy.png">
+        <a href="{{product.productUrl}}"><img class="buy-image" src="html/assets/buy.png"></a>
       </div>
     </div>
 

@@ -1,5 +1,5 @@
 export const images = [
-{
+/*{
     id:1,
     url:"../../html/assets/img1.jpeg",
 },
@@ -22,7 +22,7 @@ export const images = [
 {
   id:6,
   url:"../../html/assets/img6.jpeg",
-},
+},*/
 {
   id:7,
   url:"../../html/assets/img7.jpg",
